@@ -1,34 +1,52 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-        <title>
-            Porttifólio do Sun
-        </title>
-    </head>
-    <body>
-        <nav>
-
-        </nav>
-    </body>
-    <div class="menu">
-        <ul>
-            <li>alguma coisa</li>
-        </ul>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page - Luiz Eduardo Silva Miguel</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Barra Superior -->
+  <header>
+    <div class="logo" onclick="logoClick()">
+      <img src="img/360_F_414311466_I2YJBZGnRXgrTHC61dj1B7UhhMUnQmkY.jpg" alt="Logo">
+      <span>Luiz Eduardo Silva Miguel</span>
     </div>
-    <footer>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
 
-    </footer>
+  <!-- Banner -->
+   
+  <section class="banner">
+    <img src= "img/images.jpeg">
+    <h1>olá, Sou o Luiz</h1>
+  </section>
 
-    <a href="https://github.com/Luiz16252"><img src="github imagens.jpeg"</a>
-    <a href="https://www.instagram.com/wwhluiz/"><img src="14414683-logotipo-preto-do-instagram-em-fundo-transparente-gratis-vetor.jpg"</a>
+  <!-- Container -->
+  <div class="container">
+    <!-- Lado Esquerdo -->
+    <div class="left">
+      <h2>Contato</h2>
+      <div class="contacts">
+        <a href="https://www.instagram.com/wwhluiz/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="mailto:seuemail@example.com"><i class="fas fa-envelope"></i> Email</a>
+        <a href="https://github.com/Luiz16252" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+    </div>
 
+    <!-- Lado Direito -->
+    <div class="right">
+      <h2>Formações</h2>
+      <p>Em breve...</p>
+    </div>
+  </div>
 
-
-    <div class="formacao">
-        <h3>Formação</h3>
-        <h4>Ensino Médio com Técnico em Desenvolvimento de Sistemas<br>
-            E.E. Plínio Negrão<br>
-            Duração: 2 anos<br>
-            Conclusão Prevista: Dezembro 2025</h4>
-     </div>
+  <script src="script.js"></script>
+</body>
 </html>
