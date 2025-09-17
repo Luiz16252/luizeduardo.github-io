@@ -6,8 +6,20 @@
 }
 
 body {
-  background-color: #ffffff;
-  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  color: #fff; /* texto branco para destacar no fundo */
+  background: linear-gradient(135deg, #2e003e, #6a0dad, #12005e, #38006b);
+  background-size: 400% 400%;
+  animation: galaxy 15s ease infinite;
+}
+
+@keyframes galaxy {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 /* Barra Superior */
@@ -15,7 +27,7 @@ header {
   width: 100%;
   padding: 15px 30px;
   background: #111;
-  color: #460137;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,6 +37,7 @@ header {
   z-index: 1000;
 }
 
+/* Logo */
 .logo {
   display: flex;
   align-items: center;
@@ -36,12 +49,13 @@ header {
   margin-right: 10px;
 }
 
+/* Botão Menu Hambúrguer */
 .menu-toggle {
-  width: 30px;
-  height: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 30px;
+  height: 20px;
   cursor: pointer;
 }
 
@@ -53,16 +67,41 @@ header {
   transition: 0.3s;
 }
 
+/* Animação ao clicar no hambúrguer */
 .menu-toggle.active span:nth-child(1) {
   transform: rotate(45deg) translateY(8px);
 }
-
 .menu-toggle.active span:nth-child(2) {
   opacity: 0;
 }
-
 .menu-toggle.active span:nth-child(3) {
   transform: rotate(-45deg) translateY(-8px);
+}
+
+/* Menu dropdown */
+.menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 30px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  z-index: 1001;
+}
+.menu a {
+  display: block;
+  text-decoration: none;
+  color: #111;
+  padding: 8px 12px;
+  transition: 0.3s;
+}
+.menu a:hover {
+  background: #eee;
+}
+.menu.active {
+  display: block;
 }
 
 /* Banner */
@@ -72,11 +111,10 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 80px;
-  background: linear-gradient(to bottom, #222, #490043);
-  color: #fff;
+  padding-top: 160px;
+  background: linear-gradient(135deg, #2e003e, #6a0dad, #12005e, #38006b);  color: #000000;
+  text-align: center;
 }
-
 .banner img {
   width: 180px;
   height: 180px;
@@ -98,37 +136,64 @@ header {
   flex: 1;
   padding: 30px;
   min-width: 200px;
-}
-
-.left {
   background: #46003c;
-}
-
-.right {
-  background: #46003c;
+  color: #000000;
 }
 
 /* Contatos */
 .contacts {
+  text-align: center;
   display: flex;
-  flex-direction: column;
   gap: 10px;
 }
-
 .contacts a {
+  text-align: center;
   text-decoration: none;
-  color: #111;
+  color: #fff;
   font-size: 18px;
   display: flex;
   align-items: center;
   gap: 10px;
   transition: 0.3s;
 }
-
 .contacts a:hover {
-  color: #0077b6;
+  color: #00b4d8;
 }
-
 .contacts i {
   font-size: 18px;
+}
+
+/* Projetos */
+.projetos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.projeto {
+  background: linear-gradient(to bottom, #222, #b4b4b4);
+  color: #ffb1f5;
+  padding: 20px;
+  border-radius: 10px;  
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+.projeto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #111;
+  color: #fff;
+  margin-top: 20px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
 }

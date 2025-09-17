@@ -3,9 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page - Luiz Eduardo Silva Miguel</title>
+  <title>Portfólio - Luiz Eduardo Silva Miguel</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Rolagem suave */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 <body>
   <!-- Barra Superior -->
@@ -19,33 +25,79 @@
       <span></span>
       <span></span>
     </div>
+    <!-- Menu com âncoras -->
+    <nav class="menu">
+      <a href="#sobre">Sobre</a>
+      <a href="#formacoes">Formações</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
   </header>
 
   <!-- Banner -->
-   
   <section class="banner">
-    <img src= "img/images.jpeg">
-    <h1>olá, Sou o Luiz</h1>
+    <img src="img/images.jpeg" alt="Banner de apresentação">
+    <h1>Olá, sou o Luiz</h1>
+    <p>Bem-vindo ao meu portfólio!</p>
   </section>
 
-  <!-- Container -->
-  <div class="container">
-    <!-- Lado Esquerdo -->
-    <div class="left">
-      <h2>Contato</h2>
-      <div class="contacts">
-        <a href="https://www.instagram.com/wwhluiz/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-        <a href="mailto:seuemail@example.com"><i class="fas fa-envelope"></i> Email</a>
-        <a href="https://github.com/Luiz16252" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+  <!-- Sobre -->
+  <section id="sobre" class="container">
+    <li>
+    <h1>Sobre Mim</h1>
+    <h2><p>Sou estudante dedicado, apaixonado por tecnologia e sempre em busca de aprender novas habilidades. 
+       Tenho interesse em desenvolvimento, design e áreas relacionadas à inovação.</p>
+    </h2>
+      </li>
+  </section>
+
+  <!-- Formações -->
+  <section id="formacoes" class="container">
+    <li>
+    <h2>Formações</h2>
+    
+      <p><strong>Ensino Médio:</strong> Concluído em 2025</p>
+      <p><strong>Cursos Online:</p>
+      <p> Inglês</p>
+      <p> Espanhol</p>
+      <p> Desenvolvimento de sistemas</p>
+    </li>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projetos" class="container">
+    <li>
+    <h2>Projetos</h2>
+    <div class="projetos-grid">
+      <div class="projeto">
+        <h3>Portfólio Pessoal</h3>
+        <p>Este site é um dos meus projetos, desenvolvido com HTML, CSS e JavaScript.</p>
+      </div>
+      <div class="projeto">
+        <h3>Exemplo de Projeto</h3>
+        <p>Breve descrição do projeto que você quiser destacar (pode ser GitHub, site ou trabalho prático).</p>
+    </li>
       </div>
     </div>
+  </section>
 
-    <!-- Lado Direito -->
-    <div class="right">
-      <h2>Formações</h2>
-      <p>Em breve...</p>
+  <!-- Contato -->
+  <section id="contacts" class="container">
+    <li>  
+    <h2>Contato</h2>
+    <div class="contacts">
+      <a href="https://www.instagram.com/wwhluiz/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="mailto:seuemail@example.com"><i class="fas fa-envelope"></i> Email</a>
+      <a href="https://github.com/Luiz16252" target="_blank"><i class="fab fa-github"></i> GitHub</a>
     </div>
-  </div>
+    <p><strong>Telefone:</strong> (11) 99014-1061</p>
+    <p><strong>Cidade:</strong> São Paulo - SP</p>
+  </li>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 - Desenvolvido por Luiz Eduardo Silva Miguel</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
