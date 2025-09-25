@@ -174,10 +174,18 @@
 
   /* Sobre Mim */
 
-   .sobre-mim {
-
-  }
-
+  .sobre-mim,
+  .formacoes {
+  width: 70%;
+  margin: 150px auto; /* centraliza na horizontal */
+  padding: 40px;
+  border-radius: 30px;
+  border: 5px solid white;
+  background: linear-gradient(135deg, #2e003e, #6a0dad, #12005e, #38006b);
+  color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+  /* formacoes */
   /* Projetos */
   .projetos-grid {
     display: grid;
@@ -185,7 +193,7 @@
     gap: 20px;
     margin-left: 360px;
     margin-top: 150px;
-    margin-bottom: 100px;
+    margin-bottom: 100px; 
     border-radius: 30px;
   }
   .projeto {
